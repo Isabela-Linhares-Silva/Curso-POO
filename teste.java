@@ -13,5 +13,21 @@ public class teste {
     h = 5.0;
     area = (b + B)/2.0 * h;
     System.out.println(area);
+
+    int c, d;
+    double resultado;
+
+    c = 5;
+    d = 2;
+    resultado = (double)c/d;
+    System.out.println(resultado);
+
+    double e;
+    int f;
+
+    e = 5.0;
+    f = (int)e;
+
+    System.out.println(f);
     }
 }
