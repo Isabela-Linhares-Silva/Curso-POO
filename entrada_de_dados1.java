@@ -18,7 +18,7 @@ public class entrada_de_dados1 {
         System.out.printf("Voce digitou: %.2f%n",z);
 
         char w;
-        w = sc.next().charAt(0);
+        w = sc.next().charAt(0);// Para ler um caractere
         System.out.println("Voce digitou: "+ w);
 
         sc.close();
