@@ -1,6 +1,7 @@
 package application;
 
 import java.util.Scanner;
+
 import entities.Triangle;
 public class Program {
     public static void main(String[] args) {
@@ -18,11 +19,10 @@ public class Program {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double p = (x.a + x.b + x.c)/2.0;
-        double areaX = Math.sqrt(p*(p-x.a)*(p-x.b)*(p-x.c));
+        
+        double areaX = x.area();
 
-        double h = (y.a + y.b + x.c)/2.0;
-        double areaY = Math.sqrt(h*(h-y.a)*(h-y.b)*(h-y.c));
+        double areaY = y.area();
         System.out.printf("Area X = %.4f\n",areaX);
         System.out.printf("Area Y = %.4f\n",areaY);
 
