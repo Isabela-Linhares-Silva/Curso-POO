@@ -31,6 +31,8 @@ public class Store {
         item.RemoveProducts();
         item.TotalValueInStock();
 
+        System.out.print("Product data: ");
+        System.out.println(item);
         sc.close();
     }
     

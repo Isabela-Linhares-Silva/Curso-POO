@@ -23,4 +23,14 @@ public class Products {
         return stock -=remove;
     }
 
+    public String toString(){
+        return name
+            + ", $ "
+            + String.format("%.2f", price)
+            + ", "
+            + stock
+            + " units, Total: $ "
+            + String.format("%.2f", Total());
+    }
+
 }
