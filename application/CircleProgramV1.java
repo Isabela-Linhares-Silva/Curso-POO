@@ -2,7 +2,7 @@ package application;
 
 import java.util.Scanner;
 
-public class CircleProgram {
+public class CircleProgramV1 {
     public static final double PI = 3.14;//final define que uma vez esse valor atribuido ele não mudará mais
     public static void main(String[] args) {// nao eh possivel chamar metodos que nao estaticos dentro de um estatico
         Scanner sc = new Scanner(System.in);
