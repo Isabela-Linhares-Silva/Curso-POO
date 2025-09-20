@@ -1,6 +1,6 @@
 package util;
 
-public class Circle {
+public class CircleV2 {
     public final double PI = 3.14;
 
     public double circumference(double radius) {
@@ -10,3 +10,4 @@ public class Circle {
         return 4.0 * PI * radius * radius * radius / 3.0;
     } 
 }
+

@@ -2,12 +2,12 @@ package application;
 
 import java.util.Scanner;
 
-import util.Circle;
+import util.CircleV2;
 
 public class CircleProgramV2 {
     public static void main(String[] args) {// já que vem de outra pasta, foi neceessario instanciar, as funções tbm nao precisam estar estáticas
         Scanner sc = new Scanner(System.in);
-        Circle circ = new Circle();
+        CircleV2 circ = new CircleV2();
 
         System.out.print("Enter radius: ");
         double radius = sc.nextDouble();
