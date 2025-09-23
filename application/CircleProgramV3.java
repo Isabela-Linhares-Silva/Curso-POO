@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import util.CircleV3;
 
-public class CiecleProgramV3 {
+public class CircleProgramV3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
