@@ -1,27 +1,47 @@
 package entities;
 
-public class ProductsV2 {
-    public String name;
-    public double price;
-    public int stock;
+public class ProductsV3 {
+    private String name;
+    private double price;
+    private int stock;
     public int plus;
     public int remove;
 
-    public ProductsV2(){
+    public ProductsV3(){
         
     }// construtor padrão
 
-    public ProductsV2(String name, double price, int stock){
+    public ProductsV3(String name, double price, int stock){
         this.name = name;
         this.price = price;
         this.stock = stock;
     }// construtor personalizado
 
-        public ProductsV2(String name, double price){
+        public ProductsV3(String name, double price){
         this.name = name;
         this.price = price;
         
     }// construtor inicializando a quantidade em 0
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getPrice(){
+        return name;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public double getStock(){
+        return stock;
+    }
 
     public double Total() {
         return price *stock;
@@ -32,7 +52,7 @@ public class ProductsV2 {
     }
 
     public int AddProducts(){
-        return this.stock += plus;
+        return stock += plus;
     }
 
     public int RemoveProducts(){

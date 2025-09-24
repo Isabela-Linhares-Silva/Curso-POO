@@ -2,9 +2,9 @@ package application;
 
 import java.util.Scanner;
 
-import entities.ProductsV2;
+import entities.ProductsV3;
 
-public class StoreV2 {
+public class StoreV3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
@@ -15,19 +15,25 @@ public class StoreV2 {
         double price = sc.nextDouble();
 
 
-        ProductsV2 item = new ProductsV2(name, price);// dessa maneira força ao item a nao ser inicializado vazio, e indo direto para o objeto com a utilização do this
+        ProductsV3 item = new ProductsV3(name, price);// dessa maneira força ao item a nao ser inicializado vazio, e indo direto para o objeto com a utilização do this
         //print
+
         System.out.print("Product ");
         item.TotalValueInStock();
+
+        item.setName("Computer");
+        System.out.println("Update name: "+ item.getName());
+        item.setPrice(1200.00);
+        System.out.println("Update price: "+ item.getPrice());
+
 
         System.out.println("Enter the number of products to be added in stock: ");
         item.plus = sc.nextInt();
         System.out.println("Update the number of products to be removed from stock: ");
         item.remove = sc.nextInt();
 
-        System.out.print("Update ");
+        
         item.AddProducts();
-        item.TotalValueInStock();
         System.out.print("Update ");
         item.RemoveProducts();
         item.TotalValueInStock();
