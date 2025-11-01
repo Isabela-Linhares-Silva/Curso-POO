@@ -1,7 +1,7 @@
 package entities;
 
 public class ProductsV3 {
-    private String name;
+    private String name;// como é private só pode ser acessado nessa classe
     private double price;
     private int stock;
     public int plus;
