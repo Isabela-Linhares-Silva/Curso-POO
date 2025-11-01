@@ -18,4 +18,4 @@ public class ConverterProgram {
         System.out.printf("Amount to be paid in reais = %.2f\n", reais);
         sc.close();
     }
-}
+} 

@@ -38,7 +38,7 @@ public class ProductsV3 {
     public void setPrice(double price){
         this.price = price;
     }
-
+ 
     public double getStock(){
         return stock;
     }
